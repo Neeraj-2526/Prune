@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Contact_us">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="Contact Us"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textView65"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/payment_method_bg"
+        android:fontFamily="@font/antic"
+        android:gravity="center_vertical"
+        android:hint="Select Your issue"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColorHint="#737373"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/textView66"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/payment_method_bg"
+        android:fontFamily="@font/antic"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:hint="Describe Your issue. suggestions related queries...(250 words max)"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColorHint="#737373"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView65" />
+
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/travelbuttobbg"
+        android:fontFamily="@font/antic"
+        android:text="SEND"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+    <TextView
+        android:id="@+id/textView201"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/antic"
+        android:text="1800-180-6633"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button31" />
+
+    <TextView
+        android:id="@+id/textView202"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/antic"
+        android:text="  (Toll Free Mon-Sat 9 a.m. to 9 p.m.)"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView201"
+        app:layout_constraintStart_toEndOf="@+id/textView201" />
+
+    <TextView
+        android:id="@+id/textView203"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/antic"
+        android:text="help@abc.com"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView201" />
+
+    <TextView
+        android:id="@+id/textView204"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/antic"
+        android:text="Eve's Only. ITPB Tech Park. Whitefield Bengaluru, Karnataka, 56376"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView203" />
+
+    <ImageView
+        android:id="@+id/imageView62"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView201"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView201"
+        app:srcCompat="@drawable/contact" />
+
+    <ImageView
+        android:id="@+id/imageView63"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView203"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView203"
+        app:srcCompat="@drawable/ic_baseline_mail_outline_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView64"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView204"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView204"
+        app:srcCompat="@drawable/ic_baseline_location_on_24"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

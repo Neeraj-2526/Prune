@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bill_payment_newnumber1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:fontFamily="@font/catamaran_medium"
+            android:text="Bill Payment"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.039"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <GridLayout
+            android:id="@+id/grid_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="4"
+            android:columnOrderPreserved="false"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="0dp"
+            android:rowCount="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bill_cv1"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mobile" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bill_cv2"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dth_img" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bill_cv3"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tap" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bill_cv4"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_india"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/electricity_img" />
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:id="@+id/billpayment_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grid_layout1">
+
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/catamaran_medium"
+                android:gravity="center"
+                android:text="Mobile"
+                android:textColor="#41FFE8"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/catamaran_medium"
+                android:gravity="center"
+                android:text="DTH"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/catamaran_medium"
+                android:gravity="center"
+                android:text="Water"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/catamaran_medium"
+                android:gravity="center"
+                android:text="Electricity"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prepaid" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Postpaid" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/dth_select_operator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:outlineAmbientShadowColor="#000"
+        android:fontFamily="@font/catamaran_semibold"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:hint="Mobile no."
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:fontFamily="@font/catamaran_semibold"
+        android:hint="Select circle"
+        android:inputType="textPersonName"
+        android:textColorHint="#000"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dth_select_operator" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="#00BFAD"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/jio_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/antic"
+                android:text="Rs 119"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/antic"
+                android:text="Validity : 60 Days"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/antic"
+                android:text="Ultimated calls on all network."
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/antic"
+                android:text="3 GB Mobile data, 350 SMS"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView75" />
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/antic"
+                android:text="10 GB extra data"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="jio"
+                android:textSize="12dp"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView75" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView78"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_baseline_sim_card_24"
+                tools:ignore="VectorDrawableCompat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bill_payment_button_bg"
+        android:fontFamily="@font/antic"
+        android:text="PROCEED TO PAYMENT"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

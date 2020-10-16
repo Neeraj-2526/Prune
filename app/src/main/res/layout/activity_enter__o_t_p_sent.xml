@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ob2"
+    tools:context=".Enter_OTP_sent">
+
+    <TextView
+        android:id="@+id/textView146"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/otp_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView147"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#97D6FF"
+        android:fontFamily="@font/catamaran_medium"
+        android:gravity="center"
+        android:text="Continue without signing"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/textView146"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/travelbuttobbg"
+        android:fontFamily="@font/antic"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFFFF"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView190"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_box"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:fontFamily="@font/catamaran_medium"
+        android:hint="Reading your OTP"
+        android:textColorHint="#000"
+        android:textSize="10dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView148"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="Enter OTP"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:fontFamily="@font/catamaran_bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView190"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="Retry in"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView147"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView191"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="30"
+        android:textAllCaps="false"
+        android:textColor="#5EC6FF"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView147"
+        app:layout_constraintStart_toEndOf="@+id/textView190" />
+
+    <TextView
+        android:id="@+id/textView192"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="sec"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView147"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView191" />
+</androidx.constraintlayout.widget.ConstraintLayout>

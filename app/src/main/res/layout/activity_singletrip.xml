@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".singletrip">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="Explore Services"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/arsenal"
+        android:paddingLeft="18dp"
+        android:text="TRAVEL INSURANCE / SINGLE TRIP"
+        android:textColor="#BFBFBF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient1" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:text="What is single trip?"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/cantarell"
+                android:paddingLeft="10dp"
+                android:paddingRight="8dp"
+                android:text="Loreum contoxourLorem ipsum dolor sit amet. consentrular adipiscing elit.Lorem ipsum dolor sit amet. consentrular adipiscing elitLorem ipsum dolor sit amet. consentrular adipiscing elit. Loreum contoxourLorem ipsum dolor sit amet"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView20"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Worldwide" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="Worldwide" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="(Excluding USA &amp; Canada)"
+            android:textColor="#000"
+            android:textSize="7dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:fontFamily="@font/catamaran_semibold"
+        android:inputType="date"
+        android:paddingLeft="10dp"
+        android:text="Date Of Birth"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:fontFamily="@font/catamaran_semibold"
+        android:inputType="date"
+        android:paddingLeft="10dp"
+        android:text="Trip Start Date"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <EditText
+        android:id="@+id/editTextDate3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:fontFamily="@font/catamaran_semibold"
+        android:inputType="date"
+        android:paddingLeft="10dp"
+        android:text="Trip End Date"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/travelbuttobbg"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="CALCULATE PREMIUM"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate3" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/ic_baseline_calendar_today_24"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/ic_baseline_calendar_today_24"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

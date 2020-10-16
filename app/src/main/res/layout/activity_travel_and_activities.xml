@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Travel_and_activities">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="Travel &amp; Activities"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/grid_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:padding="5dp"
+        android:rowCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/antic"
+                android:background="@drawable/blue_outline_button"
+                android:text="INDIA"
+                android:textColor="#2196F3"
+                android:textSize="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/antic"
+                android:background="@drawable/blue_outline_button"
+                android:text="JAPAN"
+                android:textColor="#2196F3"
+                android:textSize="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/antic"
+                android:background="@drawable/blue_outline_button"
+                android:text="PHUKET"
+                android:textColor="#2196F3"
+                android:textSize="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/antic"
+                android:background="@drawable/blue_outline_button"
+                android:text="RUSSIA"
+                android:textColor="#2196F3"
+                android:textSize="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/antic"
+                android:background="@drawable/blue_outline_button"
+                android:text="CANADA"
+                android:textColor="#2196F3"
+                android:textSize="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/antic"
+                android:background="@drawable/blue_outline_button"
+                android:text="USA"
+                android:textColor="#2196F3"
+                android:textSize="12dp" />
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:outlineAmbientShadowColor="#000"
+        android:outlineSpotShadowColor="#000"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid_layout1"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/is3" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/simcardedittext_bg"
+        android:textSize="15dp"
+        android:textColor="#CACACA"
+        android:ems="10"
+        android:elevation="2dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:text="search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:background="@drawable/search_button_bg"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

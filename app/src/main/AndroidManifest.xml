@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neeraj.anew">
+<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Travel_and_activities"></activity>
+        <activity android:name=".Mycart" />
+        <activity android:name=".sign_up"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".currency" />
+        <activity android:name=".Checkout" />
+        <activity android:name=".Contact_us" />
+        <activity android:name=".Mobile_signin" />
+        <activity android:name=".Enter_OTP_sent" />
+        <activity android:name=".select_country" />
+        <activity android:name=".compare_smartphone" />
+        <activity android:name=".Enter_OTP" />
+        <activity android:name=".latest_news" />
+        <activity android:name=".review" />
+        <activity android:name=".filter" />
+        <activity android:name=".mobile_sim_cart" />
+        <activity android:name=".mobile_sim_delivery" />
+        <activity android:name=".mobile_sim_track" />
+        <activity android:name=".smartphone_devices_solution" />
+        <activity android:name=".Smartphone_devices" />
+        <activity android:name=".datapack" />
+        <activity android:name=".bill_payment_water" />
+        <activity android:name=".bill_payment_dth_proceed" />
+        <activity android:name=".bill_payment_dth" />
+        <activity android:name=".bill_payment_previous" />
+        <activity android:name=".bill_payment_newnumber1" />
+        <activity android:name=".bill_payment_mobile" />
+        <activity android:name=".bill_payment" />
+        <activity android:name=".mobile_sim_rating" />
+        <activity android:name=".payment_method" />
+        <activity android:name=".buy_india_sim" />
+        <activity android:name=".International_Sim" />
+        <activity android:name=".singletripsubpart" />
+        <activity android:name=".singletrip" />
+        <activity android:name=".travel_Insurance" />
+        <activity android:name=".sign_in"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
